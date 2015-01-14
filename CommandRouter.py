@@ -11,4 +11,7 @@ class commandRouter :
 
 	def handle(self, handlerName, what) :
 
-		self.handlers[handlerName].handle(what)
+		if handlerName in self.handlers :
+			self.handlers[handlerName].handle(what)
+		else :
+			raise Exception("No handler present")

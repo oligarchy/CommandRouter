@@ -13,3 +13,4 @@ router.registerHandler("2", handler3)
 
 router.handle("1", "what1")
 router.handle("2", "handler2is pretty sweet")
+router.handle("3", "what dat mouf do?")
